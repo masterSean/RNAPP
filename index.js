@@ -1,6 +1,5 @@
 import { AppRegistry } from 'react-native';
-import Home from './app/screens/Home'
-import Login from './app/screens/Login'
+import GitApp from './app/index'
 import App from './App';
 
-AppRegistry.registerComponent('GitApp', () => Login);
+AppRegistry.registerComponent('GitApp', () => GitApp);

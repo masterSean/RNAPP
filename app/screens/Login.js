@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { View, Text, TextInput, Button } from 'react-native'
 
-const Login = () => {
+const Login = ({ navigation }) => {
   return (
     <View>
       <View>
@@ -13,7 +13,7 @@ const Login = () => {
         <Text>Password</Text>
         <TextInput />
       </View>
-      <Button title="Login" onPress={() => alert('Login')}/>
+      <Button title="Login" onPress={() => navigation.navigate('Protected') }/>
     </View>
   )
 }

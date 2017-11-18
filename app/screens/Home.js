@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, Button } from 'react-native'
 import Navigation from '../components/Navigation'
 import RepositoryList from '../components/RepositoryList'
 
@@ -9,11 +9,11 @@ const data = [
   { name: 'Repository Name3', id: 3 },
 ];
 
-const Home = () => {
+const Home = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Navigation />
       <RepositoryList items={data} />
+      <Button title="Settings" onPress={() => navigation.navigate('Login')} />
     </View>
   )
 }
